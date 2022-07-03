@@ -112,6 +112,7 @@ ngVisApp.controller('myController', function ($scope, $http, $q, $filter, $locat
 
     $scope.patterns = [];
     $scope.todos = [];
+    $scope.inprogress = [];
 
     $scope.init = function () {
         $scope.getData();
@@ -130,6 +131,12 @@ ngVisApp.controller('myController', function ($scope, $http, $q, $filter, $locat
         $http.get(file)
         .then(function(response) {
             $scope.todos = response.data.patterns;
+        });
+
+        file = 'data/inprogress.json';
+        $http.get(file)
+        .then(function(response) {
+            $scope.inprogress = response.data.patterns;
         });
     };
 

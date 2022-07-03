@@ -1,0 +1,27 @@
+{
+    "patterns": [
+        {
+            "id": 1,
+            "name": "Yin Yang",
+            "description": "",
+            "date": "1970-01-01",
+            "link": "https://www.etsy.com/uk/listing/671637172/yin-yang-cross-stitch-pattern-digital"
+        },
+        {
+            "id": 2,
+            "name": "Catan Board",
+            "description": "",
+            "date": "1970-01-01",
+            "image": "images/CatanBoard.jpg",
+            "link": "https://www.etsy.com/uk/listing/650867951"
+        },
+        {
+            "id": 3,
+            "name": "Scarlet Wizard",
+            "description": "",
+            "date": "1970-01-01",
+            "image": "images/ScarletWizard.jpg",
+            "link": ""
+        }
+    ]
+}

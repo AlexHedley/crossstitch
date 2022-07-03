@@ -142,6 +142,7 @@
                                 <h5 class="card-title">{{pattern.name}}</h5>
                                 <p class="card-text">{{pattern.description}}</p>
                                 <p class="card-text">{{pattern.date | date:'d MMM yyyy'}}</p>
+                                <a ng-if="pattern.link.length > 0" ng-href="{{pattern.link}}" target="_blank" class="btn btn-primary">Link</a>
                             </div>
                         </div>
                     </div>
@@ -149,24 +150,62 @@
 
                 <br />
 
-                <div class="row justify-content-md-center">
+                <div class="row">
+                    <div class="col">
+                        <h2>In Progress</h2>
+                    </div>
+                </div>
+
+                <div class="row">
                     <div class="">
+                        <div 
+                            ng-repeat="pattern in inprogress | filter:searchText"
+                            class="col-md-4"
+                            style="margin-bottom: 50px;"
+                        >
+                            <div class="card" style="width: 18rem;">
+                                <img src="/crossstitch/{{pattern.image}}" class="d-block w-100" alt="{{item.name}}">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{pattern.name}}</h5>
+                                    <a ng-if="pattern.link.length > 0" ng-href="{{pattern.link}}" target="_blank" class="btn btn-primary">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="row">
+                    <div class="col">
+                        <h2>Todo</h2>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
 
                         <table id="results" class="sortable">
                             <thead>
                                 <tr>
                                     <th>Name</th>
+                                    <th>Author</th>
+                                    <th>Link</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr ng-repeat="todo in todos">
                                     <td>{{todo.name}}</td>
+                                    <td>{{todo.author}}</td>
+                                    <td><a href="{{todo.link}}" target="_blank">Link</a></td>
                                 </tr>
                             </tbody>
                         </table>
 
                     </div>
                 </div>
+
+                <br />
                 
             </div>
 

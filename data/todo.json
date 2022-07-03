@@ -2,21 +2,8 @@
     "patterns": [
         {
             "id": 0,
-            "name": "Yin Yang",
-            "description": "",
-            "date": "202#-01-01",
-            "link": "https://www.etsy.com/uk/listing/671637172/yin-yang-cross-stitch-pattern-digital"
-        },
-        {
-            "id": 0,
-            "name": "Catan Board",
-            "description": "",
-            "date": "202#-01-01",
-            "link": "https://www.etsy.com/uk/listing/650867951"
-        },
-        {
-            "id": 0,
             "name": "Mighty Duck",
+            "author": "MotoRuxin",
             "description": "",
             "date": "202#-01-01",
             "link": "https://www.etsy.com/uk/listing/664254858/mighty-duck-cross-stitch-pattern-pdf"
@@ -41,6 +28,42 @@
             "description": "",
             "date": "202#-01-01",
             "link": "https://www.etsy.com/uk/listing/199333506/10th-doctor-donna-noble-cross-stitch"
+        },
+        {
+            "id": 0,
+            "name": "Loch Ness Nessie Christmas",
+            "description": "",
+            "date": "202#-01-01",
+            "link": "https://www.etsy.com/uk/listing/1124018440/loch-ness-nessie-christmas-cross-stitch"
+        },
+        {
+            "id": 0,
+            "name": "Dragon, Knight and Moon",
+            "description": "",
+            "date": "202#-01-01",
+            "link": "https://www.etsy.com/uk/listing/996583983/cross-stitch-pattern-dragon-knight-and"
+        },
+        {
+            "id": 0,
+            "name": "Cactus - Prickly but Cute Stitch-a-Long",
+            "description": "",
+            "date": "202#-01-01",
+            "link": "https://www.etsy.com/uk/listing/639111488/cactus-cross-stitch-pattern-pdf-prickly"
+        },
+        {
+            "id": 0,
+            "name": "Gothic style halloween",
+            "description": "",
+            "date": "202#-01-01",
+            "link": "https://www.etsy.com/uk/listing/1046633120/gothic-style-halloween-cross-stitch"
+        },
+        {
+            "id": 0,
+            "name": "Treasure Within",
+            "description": "",
+            "date": "202#-01-01",
+            "image": "images/AdventureAwaits.jpg",
+            "link": ""
         }
     ]
 }
