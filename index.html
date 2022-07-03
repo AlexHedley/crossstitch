@@ -146,6 +146,27 @@
                         </div>
                     </div>
                 </div>
+
+                <br />
+
+                <div class="row justify-content-md-center">
+                    <div class="">
+
+                        <table id="results" class="sortable">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="todo in todos">
+                                    <td>{{todo.name}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
                 
             </div>
 

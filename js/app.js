@@ -111,6 +111,7 @@ ngVisApp.controller('myController', function ($scope, $http, $q, $filter, $locat
     }
 
     $scope.patterns = [];
+    $scope.todos = [];
 
     $scope.init = function () {
         $scope.getData();
@@ -123,6 +124,12 @@ ngVisApp.controller('myController', function ($scope, $http, $q, $filter, $locat
         .then(function(response) {
             $scope.patterns = response.data.patterns;
             $scope.buildVisualisation()
+        });
+
+        file = 'data/todo.json';
+        $http.get(file)
+        .then(function(response) {
+            $scope.todos = response.data.patterns;
         });
     };
 
