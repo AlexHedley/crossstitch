@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Cross Stitch">
+    <meta name="keywords" content="cross, stitch, cross stitch, needlework, x-stitch">
     <meta name="author" content="Alex Hedley">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -16,28 +16,34 @@
     <link rel="stylesheet" href="css/jquery-ui.1.12.1.min.css">
     <link rel="stylesheet" href="css/pivot.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.13.0/pivot.min.css"> -->
-    <link rel="stylesheet" href="css/styles.css">
 
+    <!-- visjs -->
+    <!-- <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" /> -->
+    <link href="css/visjs/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/timeline.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- Fonts -->
     <!-- <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'> -->
 
-    <title></title>
+    <title>Cross Stitch</title>
   </head>
-  <body ng-app="myApp">
+  <body ng-controller="myController">
     
     <!-- Begin page content -->
     <main role="main" class="container">
 
         <section class="jumbotron title-container text-center">
             <div>
-                <h1></h1>
+                <h1>Cross Stitch</h1>
 
                 <div class="row justify-content-md-center">
                     <div class="col-lg-8">
                         <div class="input-group search-bar">
-                            <input type="text" class="form-control" ng-model='searchText' placeholder="Search for a game..." aria-label="Search">
+                            <input type="text" class="form-control" ng-model='searchText' placeholder="Search for a pattern..." aria-label="Search">
                             <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
@@ -51,7 +57,7 @@
         </button>
         <div class="collapse" id="image">
             <div class="row justify-content-md-center">
-                <img src="images/.jpeg" width="500px" alt="Game" />
+                <img src="images/2020_Deadpool.jpg" width="500px" alt="Deadpool" />
             </div>
         </div>
 
@@ -60,42 +66,82 @@
         <div ng-controller="myController">
 
             <div class="container">
-                
-                <div class="row">
-                    <div class="col">
 
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="ui" ng-model="ui" ng-change="generatePivot()">
-                            <label class="form-check-label" for="ui">UI</label>
+                <button class="btn btn-warning float-right" type="button" data-toggle="collapse" data-target="#timeline" aria-expanded="false" aria-controls="timeline">
+                    Show/Hide
+                </button>
+                <div class="row justify-content-md-center collapse" id="timeline">
+                    <!-- <time-line data="data" options="options" events="events"></time-line> -->
+                    <!-- <vis-graph2d data="data" options="options" events="events"></vis-graph2d> -->
+                    <vis-timeline data="data" options="options" events="events"></vis-timeline>
+                </div>
+
+                <div class="row justify-content-md-center">
+                    <div class="">
+
+                        <table id="results" class="sortable">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="pattern in patterns">
+                                    <td>{{pattern.date}}</td>
+                                    <td>{{pattern.name}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="row justify-content-md-center">
+                    <div class="">
+
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li ng-repeat="pattern in patterns" data-target="#carouselExampleCaptions" data-slide-to="{{$index}}"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div ng-repeat="pattern in patterns" class="carousel-item" ng-class='{active:$first}'>
+                                    <img src="/crossstitch/{{pattern.image}}" class="d-block w-100" alt="{{pattern.name}}">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>{{pattern.name}}</h5>
+                                        <p>{{pattern.description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
 
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col">
-
-                        <div id="output" style="margin: 30px;">
-                            <p>Table...</p>
-                        </div>
-
-                    </div>
-                </div>
+                <br />
 
                 <div class="row">
                     <div 
-                        ng-repeat="game in games | filter:searchText"
+                        ng-repeat="pattern in patterns | filter:searchText"
                         class="col-md-4"
                         style="margin-bottom: 50px;"
                     >
                         <div class="card" style="width: 18rem;">
+                            <img src="/crossstitch/{{pattern.image}}" class="d-block w-100" alt="{{item.name}}">
                             <div class="card-body">
-                                <h5 class="card-title">{{game.name}}</h5>
-                                <p class="card-text">{{game.description}}</p>
-                                <p class="card-text">{{game.date | date:'d MMM yyyy'}}</p>
-                                <div ng-repeat="player in game.players">
-                                    <p>{{player.name}} <span ng-if="player.winner"><strong>Winner</strong></span></p>
-                                </div>
+                                <h5 class="card-title">{{pattern.name}}</h5>
+                                <p class="card-text">{{pattern.description}}</p>
+                                <p class="card-text">{{pattern.date | date:'d MMM yyyy'}}</p>
                             </div>
                         </div>
                     </div>
@@ -126,8 +172,10 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script> -->
     <script src="js/angular.min.js"></script>
     <!-- <script src="js/angular-filter.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.13.0/pivot.min.js"></script> -->
-    <script src="js/pivot.min.js"></script>
+    <script src="js/moment/moment.min.js"></script>
+    <!-- <script type="text/javascript" src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script> -->
+    <script src="js/visjs/vis-timeline-graph2d.min.js"></script>
+    <script src="js/visjs/angular-vis.js"></script>
     <script src="js/app.js"></script>
     </body>
 </html>
