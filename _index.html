@@ -1,0 +1,29 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="ngVisApp">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AngularVis</title>
+    <!-- <link rel="stylesheet" href="bower_components/vis/dist/vis.min.css"/> -->
+    <link rel="stylesheet" href="css/visjs/vis-timeline-graph2d.min.css"/>
+    <link rel="stylesheet" href="css/timeline.css"/>
+
+    <!-- <script type="text/javascript" src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
+    <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" /> -->
+</head>
+<body ng-controller="appController">
+
+    <vis-timeline data="data" options="options" events="events"></vis-timeline>
+
+
+    <!-- <script src="bower_components/moment/min/moment.min.js"></script> -->
+    <script src="js/moment/moment.min.js"></script>
+    <!-- <script src="bower_components/vis/dist/vis.min.js"></script> -->
+    <script src="js/visjs/vis-timeline-graph2d.min.js"></script>
+    <!-- <script src="bower_components/angular/angular.min.js"></script> -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/visjs/angular-vis.js"></script>
+    <script src="js/_app.js"></script>
+    <!-- <script src="app-graph2d.js"></script> -->
+</body>
+</html>
