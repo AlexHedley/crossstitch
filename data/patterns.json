@@ -14,7 +14,7 @@
             "name": "Pooh and Tigger's Verse Gift Cards",
             "description": "",
             "date": "2001-01-01",
-            "image": "",
+            "image": "images/2001_PoohTigger.jpg",
             "link": ""
         },
         {
@@ -22,7 +22,7 @@
             "name": "Griffindor House Banner",
             "description": "From a french pattern book, bought at Dainty Toys/Supplies",
             "date": "2004-01-01",
-            "image": "",
+            "image": "images/2004_GriffindorHouseBanner.jpg",
             "link": ""
         },
         {
@@ -36,9 +36,9 @@
         {
             "id": 5,
             "name": "Winnie The Pooh - A",
-            "description": "",
+            "description": "(Guessing 2006 like N)",
             "date": "2006-01-01",
-            "image": "",
+            "image": "images/2006_PoohA.jpg",
             "link": ""
         },
         {
@@ -46,7 +46,7 @@
             "name": "Winnie The Pooh - N",
             "description": "Made for a family friend but never got round to giving them it",
             "date": "2006-01-01",
-            "image": "",
+            "image": "images/2006_PoohN.jpg",
             "link": ""
         },
         {
@@ -54,7 +54,7 @@
             "name": "Dragon",
             "description": "Made for a family friend but never got round to giving them it",
             "date": "2007-01-01",
-            "image": "",
+            "image": "images/2007_Dragon.jpg",
             "link": ""
         },
         {
@@ -215,7 +215,8 @@
             "name": "Christmas Decoration",
             "description": "For the Advent Calendar (Add P for Pheobs)",
             "date": "2020-12-25",
-            "image": "images/2020_ChristmasDecoration.jpg"
+            "image": "images/2020_ChristmasDecoration.jpg",
+            "link": ""
         },
         {
             "id": 28,
@@ -275,7 +276,7 @@
         },
         {
             "id": 35,
-            "name": "Brotherhood of Mutants – X-Men enemies",
+            "name": "Brotherhood of Mutants - X-Men enemies",
             "description": "",
             "date": "2021-01-01",
             "image": "",

@@ -164,7 +164,7 @@
                             style="margin-bottom: 50px;"
                         >
                             <div class="card" style="width: 18rem;">
-                                <img src="/crossstitch/{{pattern.image}}" class="d-block w-100" alt="{{item.name}}">
+                                <img ng-if="pattern.image.length > 0" ng-src="/crossstitch/{{pattern.image}}" class="card-img-top" alt="{{item.name}}">
                                 <div class="card-body">
                                     <h5 class="card-title">{{pattern.name}}</h5>
                                     <a ng-if="pattern.link.length > 0" ng-href="{{pattern.link}}" target="_blank" class="btn btn-primary">Link</a>
