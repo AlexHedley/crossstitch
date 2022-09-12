@@ -8,25 +8,28 @@ function init($rootScope, $location) {
     };
 }
 
-app.config(function ($routeProvider) {
+app.config(function ($routeProvider, $locationProvider) {
     
+    $locationProvider.html5Mode(true);
+    // $locationProvider.html5mode({ enabled: true, requireBase: false });
+
     $routeProvider.when('/', {
-        templateUrl: '/crossstitch/patterns.html',
+        templateUrl: '/patterns.html',
         controller: 'patternsController'
     }).when('/todo', {
-        templateUrl: '/crossstitch/todo.html',
+        templateUrl: '/todo.html',
         controller: 'todoController'
     }).when('/inprogress', {
-        templateUrl: '/crossstitch/inprogress.html',
+        templateUrl: '/inprogress.html',
         controller: 'inprogressController'
     }).when('/mum', {
-        templateUrl: '/crossstitch/mum.html',
+        templateUrl: '/mum.html',
         controller: 'mumController'
     }).when('/minis', {
-        templateUrl: '/crossstitch/minis.html',
+        templateUrl: '/minis.html',
         controller: 'minisController'
     }).otherwise({
-        redirectTo: "/crossstitch"
+        redirectTo: "/"
     });
 
 });
