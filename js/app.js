@@ -11,22 +11,22 @@ function init($rootScope, $location) {
 app.config(function ($routeProvider) {
     
     $routeProvider.when('/', {
-        templateUrl: '/patterns.html',
+        templateUrl: '/crossstitch/patterns.html',
         controller: 'patternsController'
     }).when('/todo', {
-        templateUrl: '/todo.html',
+        templateUrl: '/crossstitch/todo.html',
         controller: 'todoController'
     }).when('/inprogress', {
-        templateUrl: '/inprogress.html',
+        templateUrl: '/crossstitch/inprogress.html',
         controller: 'inprogressController'
     }).when('/mum', {
-        templateUrl: '/mum.html',
+        templateUrl: '/crossstitch/mum.html',
         controller: 'mumController'
     }).when('/minis', {
-        templateUrl: '/minis.html',
+        templateUrl: '/crossstitch/minis.html',
         controller: 'minisController'
     }).otherwise({
-        redirectTo: "/"
+        redirectTo: "/crossstitch"
     });
 
 });
