@@ -1,7 +1,15 @@
 {
     "patterns": [
         {
-            "id": 1,
+            "id": 0,
+            "name": "Sporting Teddies",
+            "description": "First set, 2 lots.",
+            "date": "1997-01-01",
+            "image": "images/1997_SportingTeddies.png",
+            "link": ""
+        },
+        {
+            "id": 0,
             "name": "Owls",
             "author": "",
             "description": "",
@@ -10,7 +18,15 @@
             "link": ""
         },
         {
-            "id": 2,
+            "id": 0,
+            "name": "Wildlife",
+            "description": "",
+            "date": "2001-01-01",
+            "image": "images/2001_Wildlife.png",
+            "link": ""
+        },
+        {
+            "id": 0,
             "name": "Pooh and Tigger's Verse Gift Cards",
             "description": "",
             "date": "2001-01-01",
@@ -18,7 +34,7 @@
             "link": ""
         },
         {
-            "id": 3,
+            "id": 0,
             "name": "Griffindor House Banner",
             "description": "From a french pattern book, bought at Dainty Toys/Supplies",
             "date": "2004-01-01",
