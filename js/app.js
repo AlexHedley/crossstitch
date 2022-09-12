@@ -2,7 +2,7 @@
 
 var app = angular.module('myApp', ['ngRoute', 'ngVis']).run(init);;
 
-function init($rootScope) {
+function init($rootScope, $location) {
     $rootScope.isActive = function (viewLocation) { 
         return viewLocation === $location.path();
     };
