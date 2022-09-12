@@ -1,8 +1,38 @@
 'use strict';
 
-var ngVisApp = angular.module('myApp', ['ngVis']);
+var app = angular.module('myApp', ['ngRoute', 'ngVis']).run(init);;
 
-ngVisApp.controller('myController', function ($scope, $http, $q, $filter, $location, $timeout, VisDataSet) {
+function init($rootScope) {
+    $rootScope.isActive = function (viewLocation) { 
+        return viewLocation === $location.path();
+    };
+}
+
+app.config(function ($routeProvider) {
+    
+    $routeProvider.when('/', {
+        templateUrl: '/patterns.html',
+        controller: 'patternsController'
+    }).when('/todo', {
+        templateUrl: '/todo.html',
+        controller: 'todoController'
+    }).when('/inprogress', {
+        templateUrl: '/inprogress.html',
+        controller: 'inprogressController'
+    }).when('/mum', {
+        templateUrl: '/mum.html',
+        controller: 'mumController'
+    }).when('/minis', {
+        templateUrl: '/minis.html',
+        controller: 'minisController'
+    }).otherwise({
+        redirectTo: "/"
+    });
+
+});
+
+app.controller('patternsController', function ($scope, $http, $q, $filter, $location, $timeout, VisDataSet) {
+    console.log('Patterns');
 
     $scope.buildVisualisation = () => {
         // See https://github.com/visjs/angular-visjs/blob/master/app.js
@@ -111,8 +141,6 @@ ngVisApp.controller('myController', function ($scope, $http, $q, $filter, $locat
     }
 
     $scope.patterns = [];
-    $scope.todos = [];
-    $scope.inprogress = [];
 
     $scope.init = function () {
         $scope.getData();
@@ -126,20 +154,85 @@ ngVisApp.controller('myController', function ($scope, $http, $q, $filter, $locat
             $scope.patterns = response.data.patterns;
             $scope.buildVisualisation()
         });
+    };
 
-        file = 'data/todo.json';
+    $scope.init();
+});
+
+app.controller("todoController", function ($scope, $http, $q, $filter, $location) {
+    console.log('todo');
+    $scope.patterns = [];
+
+    $scope.init = function () {
+        $scope.getData();
+    }
+
+    $scope.getData = () =>  {
+        var file = 'data/todo.json';
         $http.get(file)
         .then(function(response) {
-            $scope.todos = response.data.patterns;
-        });
-
-        file = 'data/inprogress.json';
-        $http.get(file)
-        .then(function(response) {
-            $scope.inprogress = response.data.patterns;
+            $scope.patterns = response.data.patterns;
         });
     };
 
     $scope.init();
+});
 
+app.controller("inprogressController", function ($scope, $http, $q, $filter, $location) {
+    console.log('in progress');
+    $scope.patterns = [];
+
+    $scope.init = function () {
+        $scope.getData();
+    }
+
+    $scope.getData = () =>  {
+        var file = 'data/inprogress.json';
+        $http.get(file)
+        .then(function(response) {
+            $scope.patterns = response.data.patterns;
+        });
+    };
+
+    $scope.init();
+});
+
+app.controller("mumController", function ($scope, $http, $q, $filter, $location) {
+    console.log('mum');
+    $scope.patterns = [];
+
+    $scope.init = function () {
+        $scope.getData();
+    }
+
+    $scope.getData = () =>  {
+        var file = 'data/mum.json';
+
+        $http.get(file)
+        .then(function(response) {
+            $scope.patterns = response.data.patterns;
+        });
+    };
+
+    $scope.init();
+});
+
+app.controller("minisController", function ($scope, $http, $q, $filter, $location) {
+    console.log('minis');
+    $scope.patterns = [];
+
+    $scope.init = function () {
+        $scope.getData();
+    }
+
+    $scope.getData = () =>  {
+        var file = 'data/minis.json';
+
+        $http.get(file)
+        .then(function(response) {
+            $scope.patterns = response.data.patterns;
+        });
+    };
+
+    $scope.init();
 });
