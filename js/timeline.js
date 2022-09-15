@@ -3,10 +3,10 @@ var container = document.getElementById('visualization');
 
 // Create a DataSet (allows two way data-binding)
 var items = new vis.DataSet([
-    { id: 0, content: 'Sporting Teddies', start: '1997-01-01' },
+    { id: -1, content: 'Sporting Teddies', start: '1997-01-01' },
     { id: 0, content: 'Owls', start: '1998-01-01' },
-    { id: 0, content: 'Wildlife', start: '2001-01-01' },
-    { id: 0, content: 'Pooh and Tigger\'s Verse Gift Cards', start: '2001-01-01' },
+    { id: 1, content: 'Wildlife', start: '2001-01-01' },
+    { id: 2, content: 'Pooh and Tigger\'s Verse Gift Cards', start: '2001-01-01' },
     { id: 3, content: 'Griffindor House Banner', start: '2004-01-01' },
     { id: 4, content: 'A Bear For All Seasons', start: '2006-01-01' },
     { id: 5, content: 'Winnie The Pooh - A', start: '2006-01-01' },
