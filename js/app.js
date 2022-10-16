@@ -28,6 +28,9 @@ app.config(function ($routeProvider, $locationProvider) {
     }).when('/minis', {
         templateUrl: '/crossstitch/minis.html',
         controller: 'minisController'
+    }).when('/grandma', {
+        templateUrl: '/crossstitch/grandma.html',
+        controller: 'grandmaController'
     }).otherwise({
         redirectTo: "/crossstitch/"
     });
@@ -35,7 +38,7 @@ app.config(function ($routeProvider, $locationProvider) {
 });
 
 app.controller('patternsController', function ($scope, $http, $q, $filter, $location, $timeout, VisDataSet) {
-    console.log('Patterns');
+    console.debug('Patterns');
 
     $scope.buildVisualisation = () => {
         // See https://github.com/visjs/angular-visjs/blob/master/app.js
@@ -163,7 +166,7 @@ app.controller('patternsController', function ($scope, $http, $q, $filter, $loca
 });
 
 app.controller("todoController", function ($scope, $http, $q, $filter, $location) {
-    console.log('todo');
+    console.debug('todo');
     $scope.patterns = [];
 
     $scope.init = function () {
@@ -182,7 +185,7 @@ app.controller("todoController", function ($scope, $http, $q, $filter, $location
 });
 
 app.controller("inprogressController", function ($scope, $http, $q, $filter, $location) {
-    console.log('in progress');
+    console.debug('in progress');
     $scope.patterns = [];
 
     $scope.init = function () {
@@ -201,7 +204,7 @@ app.controller("inprogressController", function ($scope, $http, $q, $filter, $lo
 });
 
 app.controller("mumController", function ($scope, $http, $q, $filter, $location) {
-    console.log('mum');
+    console.debug('mum');
     $scope.patterns = [];
 
     $scope.init = function () {
@@ -221,7 +224,7 @@ app.controller("mumController", function ($scope, $http, $q, $filter, $location)
 });
 
 app.controller("minisController", function ($scope, $http, $q, $filter, $location) {
-    console.log('minis');
+    console.debug('minis');
     $scope.patterns = [];
 
     $scope.init = function () {
@@ -230,6 +233,26 @@ app.controller("minisController", function ($scope, $http, $q, $filter, $locatio
 
     $scope.getData = () =>  {
         var file = 'data/minis.json';
+
+        $http.get(file)
+        .then(function(response) {
+            $scope.patterns = response.data.patterns;
+        });
+    };
+
+    $scope.init();
+});
+
+app.controller("grandmaController", function ($scope, $http, $q, $filter, $location) {
+    console.debug('grandma');
+    $scope.patterns = [];
+
+    $scope.init = function () {
+        $scope.getData();
+    }
+
+    $scope.getData = () =>  {
+        var file = 'data/grandma.json';
 
         $http.get(file)
         .then(function(response) {

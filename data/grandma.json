@@ -1,0 +1,25 @@
+{
+    "patterns": [
+        {
+            "id": 1,
+            "name": "Sampler",
+            "description": "",
+            "date": "1970-01-01",
+            "image": "images/0000_Grandma_1.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "House",
+            "description": "",
+            "date": "1970-01-01",
+            "image": "images/0000_Grandma_2.jpeg"
+        },
+        {
+            "id": 3,
+            "name": "Butterflies",
+            "description": "",
+            "date": "1970-01-01",
+            "image": "images/0000_Grandma_3.jpeg"
+        }
+    ]
+}

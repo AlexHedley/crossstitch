@@ -146,6 +146,14 @@
             "link": "https://www.hobbies-and-crafts.co.uk/store/subscriptions/crossstitcher"
         },
         {
+            "id": 0,
+            "name": "The Beatles",
+            "description": "For Will | Kaplio",
+            "date": "2015-01-01",
+            "image": "images/2015_TheBeatles.jpg",
+            "link": "https://www.etsy.com/uk/listing/123809185/the-beatles-cross-stitch-pattern-pdf"
+        },
+        {
             "id": 17,
             "name": "Alice in Wonderland - We're all mad here",
             "description": "Present for Courtney",
@@ -200,6 +208,14 @@
             "date": "2018-01-01",
             "image": "images/2018_MetallicA.jpg",
             "link": "https://cloudsfactory.net/metallica-rock-metal-band.html"
+        },
+        {
+            "id": 0,
+            "name": "The Walking Dead",
+            "description": "Present for Ray",
+            "date": "2018-01-01",
+            "image": "images/2018_TheWalkingDead.jpeg",
+            "link": "https://cloudsfactory.net/the-walking-dead.html"
         },
         {
             "id": 24,
@@ -305,6 +321,14 @@
             "date": "2021-01-01",
             "image": "",
             "link": "https://cloudsfactory.net/brotherhood-of-mutants-8211-x-men-enemies.html"
+        },
+        {
+            "id": 0,
+            "name": "Pablo",
+            "description": "Magnet for a Clare who loves ",
+            "date": "2022-01-01",
+            "image": "images/2022_Pablo.jpg",
+            "link": "https://www.eggsgobao.com/"
         }
     ]
 }
