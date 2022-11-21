@@ -194,6 +194,14 @@
       "link": ""
     },
     {
+      "id": 0,
+      "name": "Super Troopers",
+      "description": "Present for Philip",
+      "date": "2016-01-01",
+      "image": "images/2016_SuperTroopers.jpg",
+      "link": ""
+    },
+    {
       "id": 22,
       "name": "Maleficent",
       "description": "Present for Lucy (StunningCrossStitch)",
@@ -319,7 +327,7 @@
       "name": "Brotherhood of Mutants - X-Men enemies",
       "description": "",
       "date": "2021-01-01",
-      "image": "",
+      "image": "images/2021_xmen.jpg",
       "link": "https://cloudsfactory.net/brotherhood-of-mutants-8211-x-men-enemies.html"
     },
     {
