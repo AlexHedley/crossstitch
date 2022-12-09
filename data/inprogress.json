@@ -1,27 +1,44 @@
 {
-    "patterns": [
-        {
-            "id": 1,
-            "name": "Yin Yang",
-            "description": "",
-            "date": "1970-01-01",
-            "link": "https://www.etsy.com/uk/listing/671637172/yin-yang-cross-stitch-pattern-digital"
-        },
-        {
-            "id": 2,
-            "name": "Catan Board",
-            "description": "",
-            "date": "1970-01-01",
-            "image": "images/CatanBoard.jpg",
-            "link": "https://www.etsy.com/uk/listing/650867951"
-        },
-        {
-            "id": 3,
-            "name": "Scarlet Wizard",
-            "description": "",
-            "date": "1970-01-01",
-            "image": "images/ScarletWizard.jpg",
-            "link": ""
-        }
-    ]
+  "patterns": [
+    {
+      "id": 1,
+      "name": "Scarlet Wizard",
+      "description": "",
+      "date": "1970-01-01",
+      "image": "images/ScarletWizard.jpg",
+      "link": ""
+    },
+    {
+      "id": 0,
+      "name": "Sunderland Baubles",
+      "description": "",
+      "date": "202#-01-01",
+      "image": "images/SunderlandBaubles.jpg",
+      "link": "https://www.trouvaillestitchkits.co.uk/product-page/sunderland-baubles-cross-stitch-kit"
+    },
+    {
+      "id": 0,
+      "name": "Whitley Bay and Cullercoats Bauble",
+      "description": "",
+      "date": "202#-01-01",
+      "image": "images/WhitleyBayandCullercoatsBauble.jpg",
+      "link": "https://www.trouvaillestitchkits.co.uk/product-page/whitley-bay-and-cullercoats-bauble-cross-stitch-kit"
+    },
+    {
+      "id": 0,
+      "name": "Newcastle And Gateshead Baubles",
+      "description": "",
+      "date": "202#-01-01",
+      "image": "images/NewcastleAndGatesheadBaubles.jpg",
+      "link": "https://www.trouvaillestitchkits.co.uk/product-page/newcastle-and-gateshead-baubles-cross-stitch-kit"
+    },
+    {
+      "id": 0,
+      "name": "Sunderland Collection",
+      "description": "",
+      "date": "202#-01-01",
+      "image": "images/SunderlandCollection.jpg",
+      "link": "https://www.trouvaillestitchkits.co.uk/product-page/sunderland-collection-cross-stitch-kit"
+    }
+  ]
 }

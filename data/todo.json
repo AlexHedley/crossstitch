@@ -1,69 +1,77 @@
 {
-    "patterns": [
-        {
-            "id": 0,
-            "name": "Mighty Duck",
-            "author": "MotoRuxin",
-            "description": "",
-            "date": "202#-01-01",
-            "link": "https://www.etsy.com/uk/listing/664254858/mighty-duck-cross-stitch-pattern-pdf"
-        },
-        {
-            "id": 0,
-            "name": "Settlers Board Game Tiles",
-            "description": "",
-            "date": "202#-01-01",
-            "link": "https://www.etsy.com/uk/listing/517295378/settlers-board-game-tiles-cross-stitch"
-        },
-        {
-            "id": 0,
-            "name": "Carcassonne Hate",
-            "description": "",
-            "date": "202#-01-01",
-            "link": "https://www.etsy.com/uk/listing/515404244/carcassonne-hate-cross-stitch-digital"
-        },
-        {
-            "id": 0,
-            "name": "10th Doctor & Donna Noble",
-            "description": "",
-            "date": "202#-01-01",
-            "link": "https://www.etsy.com/uk/listing/199333506/10th-doctor-donna-noble-cross-stitch"
-        },
-        {
-            "id": 0,
-            "name": "Loch Ness Nessie Christmas",
-            "description": "",
-            "date": "202#-01-01",
-            "link": "https://www.etsy.com/uk/listing/1124018440/loch-ness-nessie-christmas-cross-stitch"
-        },
-        {
-            "id": 0,
-            "name": "Dragon, Knight and Moon",
-            "description": "",
-            "date": "202#-01-01",
-            "link": "https://www.etsy.com/uk/listing/996583983/cross-stitch-pattern-dragon-knight-and"
-        },
-        {
-            "id": 0,
-            "name": "Cactus - Prickly but Cute Stitch-a-Long",
-            "description": "",
-            "date": "202#-01-01",
-            "link": "https://www.etsy.com/uk/listing/639111488/cactus-cross-stitch-pattern-pdf-prickly"
-        },
-        {
-            "id": 0,
-            "name": "Gothic style halloween",
-            "description": "",
-            "date": "202#-01-01",
-            "link": "https://www.etsy.com/uk/listing/1046633120/gothic-style-halloween-cross-stitch"
-        },
-        {
-            "id": 0,
-            "name": "Treasure Within",
-            "description": "",
-            "date": "202#-01-01",
-            "image": "images/AdventureAwaits.jpg",
-            "link": ""
-        }
-    ]
+  "patterns": [
+    {
+      "id": 0,
+      "name": "Mighty Duck",
+      "author": "MotoRuxin",
+      "description": "",
+      "date": "202#-01-01",
+      "link": "https://www.etsy.com/uk/listing/664254858/mighty-duck-cross-stitch-pattern-pdf"
+    },
+    {
+      "id": 0,
+      "name": "Settlers Board Game Tiles",
+      "description": "",
+      "date": "202#-01-01",
+      "link": "https://www.etsy.com/uk/listing/517295378/settlers-board-game-tiles-cross-stitch"
+    },
+    {
+      "id": 0,
+      "name": "Carcassonne Hate",
+      "description": "",
+      "date": "202#-01-01",
+      "link": "https://www.etsy.com/uk/listing/515404244/carcassonne-hate-cross-stitch-digital"
+    },
+    {
+      "id": 0,
+      "name": "10th Doctor & Donna Noble",
+      "description": "",
+      "date": "202#-01-01",
+      "link": "https://www.etsy.com/uk/listing/199333506/10th-doctor-donna-noble-cross-stitch"
+    },
+    {
+      "id": 0,
+      "name": "Loch Ness Nessie Christmas",
+      "description": "",
+      "date": "202#-01-01",
+      "link": "https://www.etsy.com/uk/listing/1124018440/loch-ness-nessie-christmas-cross-stitch"
+    },
+    {
+      "id": 0,
+      "name": "Dragon, Knight and Moon",
+      "description": "",
+      "date": "202#-01-01",
+      "link": "https://www.etsy.com/uk/listing/996583983/cross-stitch-pattern-dragon-knight-and"
+    },
+    {
+      "id": 0,
+      "name": "Cactus - Prickly but Cute Stitch-a-Long",
+      "description": "",
+      "date": "202#-01-01",
+      "link": "https://www.etsy.com/uk/listing/639111488/cactus-cross-stitch-pattern-pdf-prickly"
+    },
+    {
+      "id": 0,
+      "name": "Gothic style halloween",
+      "description": "",
+      "date": "202#-01-01",
+      "link": "https://www.etsy.com/uk/listing/1046633120/gothic-style-halloween-cross-stitch"
+    },
+    {
+      "id": 0,
+      "name": "Treasure Within",
+      "description": "",
+      "date": "202#-01-01",
+      "image": "images/AdventureAwaits.jpg",
+      "link": ""
+    },
+    {
+      "id": 0,
+      "name": "Whitley Bay Collection",
+      "description": "",
+      "date": "202#-01-01",
+      "image": "images/WhitleyBayCollection.jpg",
+      "link": "https://www.trouvaillestitchkits.co.uk/product-page/whitley-bay-collection-cross-stitch-kit"
+    }
+  ]
 }

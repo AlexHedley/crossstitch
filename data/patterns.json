@@ -92,9 +92,17 @@
     {
       "id": 10,
       "name": "Mouseloft Christmas Cards",
-      "description": "For Courtney each Christmas from 2014-2021",
+      "description": "For Courtney each Christmas from 2014-2020",
       "date": "2014-12-25",
       "image": "images/2014_ChristmasCards.jpg",
+      "link": "https://www.mouseloft.co.uk/products.html?part=014-331stl#014-331stl"
+    },
+    {
+      "id": 0,
+      "name": "Mouseloft Christmas Cards",
+      "description": "2021-",
+      "date": "2021-12-25",
+      "image": "images/2021_ChristmasCards.jpg",
       "link": "https://www.mouseloft.co.uk/products.html?part=014-331stl#014-331stl"
     },
     {
@@ -269,9 +277,9 @@
     {
       "id": 28,
       "name": "Christmas Decoration",
-      "description": "For the Advent Calendar (Add P for Pheobs)",
+      "description": "For the Advent Calendar",
       "date": "2020-12-25",
-      "image": "images/2020_ChristmasDecoration.jpg",
+      "image": "images/2020_ChristmasDecoration.png",
       "link": ""
     },
     {
@@ -339,7 +347,22 @@
       "link": "https://cloudsfactory.net/brotherhood-of-mutants-8211-x-men-enemies.html"
     },
     {
-      "id": 0,
+      "id": 37,
+      "name": "Yin Yang",
+      "description": "",
+      "date": "2021-12-01",
+      "link": "https://www.etsy.com/uk/listing/671637172/yin-yang-cross-stitch-pattern-digital"
+    },
+    {
+      "id": 38,
+      "name": "Catan Board",
+      "description": "",
+      "date": "2021-12-01",
+      "image": "images/CatanBoard.jpg",
+      "link": "https://www.etsy.com/uk/listing/650867951"
+    },
+    {
+      "id": 39,
       "name": "Pablo",
       "description": "Magnet for a Clare who loves ",
       "date": "2022-01-01",
