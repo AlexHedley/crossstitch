@@ -11,8 +11,7 @@ function init($rootScope, $location) {
 
 app.run(function ($rootScope, $window) {
   $rootScope.updateImagePaths = function () {
-    $window.alert("I am global function. :)");
-    $()
+    $(document)
       .find("img")
       .each(function () {
         var srcpath = $(this).attr("src");
