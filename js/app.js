@@ -1,7 +1,7 @@
 "use strict";
 
 var app = angular.module("myApp", ["ngRoute", "ngVis"]).run(init);
-var baseUrl = ""; //"/crossstitch";
+var baseUrl = "/crossstitch"; //"";
 
 function init($rootScope, $location) {
   $rootScope.isActive = function (viewLocation) {
