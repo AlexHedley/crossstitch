@@ -9,3 +9,7 @@
 - [sorttable](http://www.kryogenix.org/code/browser/sorttable/)
 - [angular-visjs](https://github.com/visjs/angular-visjs)
 - [momentjs](https://momentjs.com/)
+
+## FavIcon
+
+<a href="https://www.flaticon.com/free-icons/cross-stitch" title="Cross stitch icons">Cross stitch icons created by Freepik - Flaticon</a>
