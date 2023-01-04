@@ -1,46 +1,46 @@
 {
-    "patterns": [
-        {
-            "id": 1,
-            "name": "Flowers",
-            "description": "",
-            "date": "1970-01-01",
-            "image": "images/0000_Mum_Flowers.png"
-        },
-        {
-            "id": 2,
-            "name": "Poppies",
-            "description": "",
-            "date": "1970-01-01",
-            "image": "images/0000_Mum_Poppies.png"
-        },
-        {
-            "id": 3,
-            "name": "Twins",
-            "description": "",
-            "date": "1986-01-01",
-            "image": "images/0000_Mum_Twins.png"
-        },
-        {
-            "id": 4,
-            "name": "Angel",
-            "description": "",
-            "date": "1997-01-01",
-            "image": "images/0000_Mum_Angel.png"
-        },
-        {
-            "id": 5,
-            "name": "Poppies",
-            "description": "",
-            "date": "1997-01-01",
-            "image": "images/0000_Mum_Poppies_2.png"
-        },
-        {
-            "id": 6,
-            "name": "",
-            "description": "",
-            "date": "1997-01-01",
-            "image": "images/1997_Mum_.png"
-        }
-    ]
+  "patterns": [
+    {
+      "id": 1,
+      "name": "Flowers",
+      "description": "",
+      "date": "1970-01-01",
+      "image": "images/0000_Mum_Flowers.png"
+    },
+    {
+      "id": 2,
+      "name": "Poppies",
+      "description": "",
+      "date": "1970-01-01",
+      "image": "images/0000_Mum_Poppies.png"
+    },
+    {
+      "id": 3,
+      "name": "Twins",
+      "description": "",
+      "date": "1986-01-01",
+      "image": "images/1986_Mum_Twins.png"
+    },
+    {
+      "id": 4,
+      "name": "Angel",
+      "description": "",
+      "date": "1997-01-01",
+      "image": "images/1997_Mum_Angel.png"
+    },
+    {
+      "id": 5,
+      "name": "Poppies",
+      "description": "",
+      "date": "1997-01-01",
+      "image": "images/1997_Mum_Poppies_2.png"
+    },
+    {
+      "id": 6,
+      "name": "",
+      "description": "",
+      "date": "1997-01-01",
+      "image": "images/1997_Mum_.png"
+    }
+  ]
 }

@@ -1,34 +1,34 @@
 {
-    "patterns": [
-        {
-            "id": 0,
-            "name": "Well",
-            "author": "DMC",
-            "description": "Counted Cross Stitch - Quick Kits",
-            "date": "202#-01-01",
-            "price": "£1.50",
-            "image": "images/.jpg",
-            "link": ""
-        },
-        {
-            "id": 0,
-            "name": "A Trip to the Circus",
-            "author": "DMC",
-            "description": "Cross Stitch Mini Kit - Make A Wish",
-            "date": "202#-01-01",
-            "price": "",
-            "image": "images/.jpg",
-            "link": ""
-        },
-        {
-            "id": 0,
-            "name": "Birthday Wishes",
-            "author": "DMC",
-            "description": "Birthday Mini Kits",
-            "date": "202#-01-01",
-            "price": "",
-            "image": "images/.jpg",
-            "link": ""
-        }
-    ]
+  "patterns": [
+    {
+      "id": 0,
+      "name": "Well",
+      "author": "DMC",
+      "description": "Counted Cross Stitch - Quick Kits",
+      "date": "202#-01-01",
+      "price": "£1.50",
+      "image": "images/Well.png",
+      "link": ""
+    },
+    {
+      "id": 0,
+      "name": "A Trip to the Circus",
+      "author": "DMC",
+      "description": "Cross Stitch Mini Kit - Make A Wish",
+      "date": "202#-01-01",
+      "price": "",
+      "image": "images/ATriptotheCircus.png",
+      "link": ""
+    },
+    {
+      "id": 0,
+      "name": "Birthday Wishes",
+      "author": "DMC",
+      "description": "Birthday Mini Kits",
+      "date": "202#-01-01",
+      "price": "",
+      "image": "images/BirthdayWishes.png",
+      "link": ""
+    }
+  ]
 }

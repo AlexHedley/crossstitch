@@ -1,0 +1,115 @@
+<div class="container">
+  <!-- <button class="btn btn-warning float-right" type="button" data-toggle="collapse" data-target="#timeline" aria-expanded="false" aria-controls="timeline">
+        Show/Hide
+    </button> -->
+  <div class="row justify-content-md-center" id="timeline">
+    <!-- <time-line data="data" options="options" events="events"></time-line> -->
+    <!-- <vis-graph2d data="data" options="options" events="events"></vis-graph2d> -->
+    <!-- <vis-timeline data="data" options="options" events="events"></vis-timeline> -->
+    <iframe src="timeline.html" width="100%" height="650px"></iframe>
+  </div>
+
+  <div class="row justify-content-md-center">
+    <div class="col">
+      <table id="results" class="sortable">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="pattern in patterns | filter:searchText">
+            <td>{{pattern.date}}</td>
+            <td>{{pattern.name}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <br />
+
+  <div class="row justify-content-md-center">
+    <div class="col">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            ng-repeat="pattern in patterns | filter:searchText"
+            data-target="#carouselExampleCaptions"
+            data-slide-to="{{$index}}"
+          ></li>
+        </ol>
+        <div class="carousel-inner">
+          <div
+            ng-repeat="pattern in patterns"
+            class="carousel-item"
+            ng-class="{active:$first}"
+          >
+            <img
+              src="/{{pattern.image}}"
+              class="d-block w-100"
+              alt="{{pattern.name}}"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>{{pattern.name}}</h5>
+              <p>{{pattern.description}}</p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <br />
+
+  <div class="row">
+    <div
+      ng-repeat="pattern in patterns | filter:searchText"
+      class="col-md-4"
+      style="margin-bottom: 50px"
+    >
+      <div class="card" style="width: 18rem">
+        <img
+          src="/{{pattern.image}}"
+          class="d-block w-100"
+          alt="{{item.name}}"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{pattern.name}}</h5>
+          <p class="card-text">{{pattern.description}}</p>
+          <p class="card-text">{{pattern.date | date:'yyyy'}}</p>
+          <a
+            ng-if="pattern.link.length > 0"
+            ng-href="{{pattern.link}}"
+            target="_blank"
+            class="btn btn-primary"
+            >Link</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

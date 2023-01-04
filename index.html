@@ -1,126 +1,184 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Cross Stitch" />
+    <meta
+      name="keywords"
+      content="cross, stitch, cross stitch, needlework, x-stitch"
+    />
+    <meta name="author" content="Alex Hedley" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/vendor/sticky-footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="css/vendor/jquery-ui.min.css"> -->
+    <link rel="stylesheet" href="css/vendor/jquery-ui.1.12.1.min.css" />
+    <link rel="stylesheet" href="css/vendor/pivot.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.13.0/pivot.min.css"> -->
 
-        <meta name="description" content="Cross Stitch">
-        <meta name="keywords" content="cross, stitch, cross stitch, needlework, x-stitch">
-        <meta name="author" content="Alex Hedley">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/sticky-footer.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" href="css/jquery-ui.min.css"> -->
-        <link rel="stylesheet" href="css/jquery-ui.1.12.1.min.css">
-        <link rel="stylesheet" href="css/pivot.min.css">
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.13.0/pivot.min.css"> -->
+    <!-- visjs -->
+    <!-- <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" /> -->
+    <link
+      href="css/vendor/visjs/vis-timeline-graph2d.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/timeline.css" />
 
-        <!-- visjs -->
-        <!-- <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" /> -->
-        <link href="css/visjs/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/styles.css" />
 
-        <link rel="stylesheet" href="css/styles.css">
-        
-        <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" />
 
-        <!-- Fonts -->
-        <!-- <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'> -->
+    <!-- Fonts -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'> -->
 
-        <title>Cross Stitch</title>
-        <base href="/crossstitch/">
-    </head>
-    <body ng-app="myApp">
-    
-        <!-- Begin page content -->
-        <main role="main" class="container">
+    <title>Cross Stitch</title>
+    <!-- <base href="/crossstitch/" /> -->
+  </head>
+  <body ng-app="myApp">
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Cross Stitch</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" ng-class="{ active: isActive('/')}" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                ng-class="{ active: isActive('/todo')}"
+                href="#!/todo"
+                >Todo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                ng-class="{ active: isActive('/inprogress')}"
+                href="#!/inprogress"
+                >In Progress</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                ng-class="{ active: isActive('/mum')}"
+                href="#!/mum"
+                >Mum</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                ng-class="{ active: isActive('/grandma')}"
+                href="#!/grandma"
+                >Grandma</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                ng-class="{ active: isActive('/minis')}"
+                href="#!/minis"
+                >Minis</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                ng-class="{ active: isActive('/cards')}"
+                href="#!/cards"
+                >Cards</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Cross Stitch</a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" ng-class="{ active: isActive('/')}" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" ng-class="{ active: isActive('/todo')}" href="#!/todo">Todo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" ng-class="{ active: isActive('/inprogress')}" href="#!/inprogress">In Progress</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" ng-class="{ active: isActive('/mum')}" href="#!/mum">Mum</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" ng-class="{ active: isActive('/grandma')}" href="#!/grandma">Grandma</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" ng-class="{ active: isActive('/minis')}" href="#!/minis">Minis</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+      <section class="jumbotron title-container text-center">
+        <div>
+          <h1>Cross Stitch</h1>
 
-            <section class="jumbotron title-container text-center">
-                <div>
-                    <h1>Cross Stitch</h1>
+          <div class="row justify-content-md-center">
+            <div class="col-lg-8">
+              <div class="input-group search-bar">
+                <input
+                  type="text"
+                  class="form-control"
+                  ng-model="searchText"
+                  placeholder="Search for a pattern..."
+                  aria-label="Search"
+                />
+                <button type="submit" class="btn btn-default">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    <div class="row justify-content-md-center">
-                        <div class="col-lg-8">
-                            <div class="input-group search-bar">
-                                <input type="text" class="form-control" ng-model='searchText' placeholder="Search for a pattern..." aria-label="Search">
-                                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- <button class="btn btn-warning float-right" type="button" data-toggle="collapse" data-target="#image" aria-expanded="false" aria-controls="image">
+      <!-- <button class="btn btn-warning float-right" type="button" data-toggle="collapse" data-target="#image" aria-expanded="false" aria-controls="image">
                 Show/Hide
             </button> -->
-            <!-- <div class="collapse" id="image">
+      <!-- <div class="collapse" id="image">
                 <div class="row justify-content-md-center">
                     <img src="images/2020_Deadpool.jpg" width="500px" alt="Deadpool" />
                 </div>
             </div> -->
 
-            <br />
+      <br />
 
-            <div ng-view>
-            </div>
+      <div ng-view></div>
+    </main>
 
-        </main>
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted"
+          ><a href="https://alexhedley.github.io/" target="_blank"
+            >Alex Hedley</a
+          >.</span
+        >
+      </div>
+    </footer>
 
-        <footer class="footer">
-            <div class="container">
-                <span class="text-muted"><a href="https://alexhedley.github.io/" target="_blank">Alex Hedley</a>.</span>
-            </div>
-        </footer>
-
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.3.1.min.js" ></script>
-        <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-        <script src="js/jquery-ui.min.js"></script>
-        <!-- <script src="js/jquery-ui.1.12.1.min.js"></script> -->
-        <!-- <script src="js/popper.min.js"></script> -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- <script src="js/jquery.pretty-text-diff.min.js"></script> -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script> -->
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script> -->
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script> -->
-        <script src="js/angular.min.js"></script>
-        <!-- <script src="js/angular-filter.js"></script> -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.js"></script>
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular-route.js"></script> -->
-        <script src="js/moment/moment.min.js"></script>
-        <!-- <script type="text/javascript" src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script> -->
-        <script src="js/visjs/vis-timeline-graph2d.min.js"></script>
-        <script src="js/visjs/angular-vis.js"></script>
-        <script src="js/app.js"></script>
-    </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="js/vendor/jquery-slim.min.js"><\/script>');
+    </script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <!-- <script src="js/jquery-ui.1.12.1.min.js"></script> -->
+    <!-- <script src="js/popper.min.js"></script> -->
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!-- <script src="js/jquery.pretty-text-diff.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script> -->
+    <script src="js/vendor/angular.min.js"></script>
+    <!-- <script src="js/angular-filter.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular-route.js"></script> -->
+    <script src="js/vendor/moment/moment.min.js"></script>
+    <!-- <script type="text/javascript" src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script> -->
+    <script src="js/vendor/visjs/vis-timeline-graph2d.min.js"></script>
+    <script src="js/vendor/visjs/angular-vis.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
