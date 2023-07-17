@@ -6,6 +6,9 @@
 [![AngularJS](https://img.shields.io/badge/AngularJS-E23237?style=for-the-badge&logo=angularjs&logoColor=white)](https://angularjs.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
+[![Deploy static content to Pages](https://github.com/AlexHedley/crossstitch/actions/workflows/static.yml/badge.svg)](https://github.com/AlexHedley/crossstitch/actions/workflows/static.yml)
+[![pages-build-deployment](https://github.com/AlexHedley/crossstitch/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/AlexHedley/crossstitch/actions/workflows/pages/pages-build-deployment)
+
 ![Deadpool](images/2020_Deadpool.jpg "Deadpool")
 
 ## Site
