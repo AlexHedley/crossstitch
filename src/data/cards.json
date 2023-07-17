@@ -13,6 +13,13 @@
       "description": "",
       "date": "2022-12-01",
       "image": "images/2022_Card_Home.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Congratulations",
+      "description": "",
+      "date": "2023-01-01",
+      "image": "images/2023_Card_Congratulations.jpg"
     }
   ]
 }
