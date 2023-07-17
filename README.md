@@ -9,7 +9,7 @@
 [![Deploy static content to Pages](https://github.com/AlexHedley/crossstitch/actions/workflows/static.yml/badge.svg)](https://github.com/AlexHedley/crossstitch/actions/workflows/static.yml)
 [![pages-build-deployment](https://github.com/AlexHedley/crossstitch/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/AlexHedley/crossstitch/actions/workflows/pages/pages-build-deployment)
 
-![Deadpool](images/2020_Deadpool.jpg "Deadpool")
+![Deadpool](src/images/2020_Deadpool.jpg "Deadpool")
 
 ## Site
 
